@@ -1,0 +1,135 @@
+# studentloancalculator
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Student Loan Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form role="form" id="mainForm">
+        <div class="form-group" id= q1>
+          Are you currently enrolled in school?
+          <input type="radio" name="decision" value="Yes" checked> Yes 
+          <input type= "radio" name="decision" value="No" checked> No <br>
+      </div>
+
+      <div class= "form-group" id= q2>
+        Do you have federal student loans?
+          <input type="radio" name="federal" value="Yes" checked> Yes 
+          <input type= "radio" name="federal" value="No" checked> No
+          <input type= "radio" name="federal" value="I do not know" checked> I do not know <br>
+        </div>
+
+      <div class= "form-group" id= q3>
+         Do you have private student loans?
+          <input type="radio" name="private" value="Yes" checked> Yes 
+          <input type= "radio" name="private" value="No" checked> No
+          <input type= "radio" name="private" value="I do not know" checked> I do not know <br>
+        </div>
+
+      <div class= "form-group" id= q4>
+         Are you currently employed?
+          <input type="radio" name="employed" value="Yes" checked> Yes 
+          <input type= "radio" name="employed" value="No" checked> No <br>
+        </div>
+
+      <div class= "form-group" id= q5>
+         Are you a teacher?
+        <input type="radio" name="teacher" value="Yes" checked> Yes 
+        <input type= "radio" name="teacher" value="No" checked> No <br>
+      </div>
+
+      <div class= "form-group" id= q6>
+         Do you work for a government agency or nonprofit?   
+        <input type="radio" name= "work" value="Yes" checked> Yes 
+        <input type= "radio" name= "work" value="No" checked> No
+        <input type= "radio" name= "work" value="I do not know" checked> I do not know <br>
+        </div>
+
+      <div class= "form-group" id= q7>
+        Are you disabled and currently collect disability benefits?  
+        <input type="radio" name="disability" value="Yes" checked> Yes 
+        <input type= "radio" name="disability" value="No" checked> No <br>    
+      </div>              
+
+      <div class= "form-group" id= q8>
+        Are you single or married?    
+        <input type="radio" name="relationship" value="Single" checked> Single 
+        <input type= "radio" name="relationship" value="Married" checked> Married <br>     
+      </div>   
+
+       <div class= "form-group" id= q9>
+        Do you and your spouse file taxes jointly or separate?            
+        <input type="radio" name="filingTaxes" value="Jointly" checked> Jointly 
+        <input type= "radio" name="filingTaxes" value="Separate" checked> Separate
+        <input type= "radio" name="filingTaxes" value="I do not know" checked> I do not know <br>
+      </div> 
+
+      <div class= "form-group" id= q10>
+        Does your spouse have student loan debt?              
+        <input type="radio" name="spouseLoans" value="Yes" checked> Yes 
+        <input type= "radio" name="spouseLoans" value="No" checked> No
+        <input type= "radio" name="spouseLoans" value="I do not know" checked> I do not know <br>
+      </div> 
+
+      <div class= "form-group" id= q11>
+        How much debt (Estimated)?               
+        <input type="text" name="debt" <br>
+      </div> 
+
+      <div class= "form-group" id= q12>
+        What is your family size including yourself that you claim on your taxes?                          
+        <input type="text" name="familySize">
+        <input type="radio" name="familySize" value="I do not know" checked> I do not know <br>
+      </div> 
+
+      <div class= "form-group" id= q13>
+        What is your estimated Annual Gross Income (AGI)?                        
+        <input type="text" name="AGI"> <br>
+      </div> 
+
+      <div class= "form-group" id= q14>
+        What is the estimated outstanding balance of your loans?                        
+        <input type="text" name="balance">
+        <input type="radio" name="balance" value="I do not know" checked> I do not know <br>
+      </div> 
+
+
+      <div class= "form-group" id= q15>
+        What is the current status of your loan?                       
+        <input type="radio" name="currentStatus" value="Current" checked> Current
+        <input type= "radio" name="currentStatus" value="Deferment" checked> Deferment
+        <input type= "radio" name="currentStatus" value="Forbearance" checked> Forbearance
+        <input type= "radio" name="currentStatus" value="Default (longer than 270 days since last payment" checked> Default <br>
+       
+      </div>
+
+      <div class= "form-group" id= q16>
+        Are you currently being garnished (governmental ceasing of money due to debt)?                
+        <input type="radio" name="garnished" value="Yes" checked> Yes 
+        <input type= "radio" name="garnished" value="No" checked> No
+        <input type= "radio" name="garnished" value="I do not know" checked> I do not know <br>
+      </div> 
+
+      <div class= "form-group" id= q17>
+        Do you know your FSA ID?             
+        <input type="radio" name="FSA" value="Yes" checked> Yes 
+        <input type= "radio" name="FSA" value="No" checked> No
+        <input type= "radio" name="FSA" value="I do not know" checked> I do not know <br>
+      </div> 
+
+      <div class= "form-group" id= q18>
+        Do you plan go back to school in the next 6 months?           
+        <input type="radio" name="backToSchool" value="Yes" checked> Yes 
+        <input type= "radio" name="backToSchool" value="No" checked> No
+        <input type= "radio" name="backToSchool" value="I do not know" checked> I do not know <br>
+      </div> 
+    </form>
+</body>
+</html>
